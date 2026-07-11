@@ -1,6 +1,10 @@
 body{
     margin: 0%;   
  }
+ html,body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
  /* **title** */
   h1{
     text-align: center;
@@ -14,8 +18,9 @@ body{
  ul{
     display:flex;
     flex-direction: row;
-    margin-left: 2%;
-    margin-right: 2%;    
+  
+    margin-left: 2px;
+    margin- right 2PX;;    
     justify-content: space-between;
     align-items: center;   
 }
@@ -25,6 +30,7 @@ body{
     border-width: 1PX 3PX;
     border-radius: 20PX;
    background-color:rgb(233, 221, 203);
+   margin-bottom: 30%;
 /* +++navbar still fixed++++ */
    top: 0;
    width: 100%;
@@ -33,6 +39,7 @@ body{
    /* +++++++++ */
    cursor: pointer;
    transform: 5s;
+   z-index: 999;
 }
 nav:hover{
     transform: scale(1.01);
@@ -48,19 +55,17 @@ a:hover{
   .photo-personnel img{
     border-radius: 50%;
     object-fit: cover;    
-    object-position: center;
-    object-position: center ;   
+    object-position: center;  
  }
-
  .cover{
    background-color:#6d285f;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 40px ;
+    /* flex-wrap: wrap; */
  }
   .informations h3,.informations h4,.informations p{
- 
     color: #f5ecec;
     font-style: italic;
  }
@@ -106,6 +111,7 @@ a:hover{
     align-items: center;
     justify-content: space-between; 
     background-color:rgb(233, 221, 203); 
+    /* flex-wrap: wrap; */
 }
  .my-services span h2  {
    color: #160312;
@@ -114,14 +120,13 @@ a:hover{
     transform: scale(1.06);  
     background-color: #ca80bb;
 }
-
 /* ////.contact-mee ///// */
 .contact-mee{
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-   
+    /* flex-wrap: wrap; */   
 }
 .contact-mee span
 {
@@ -141,9 +146,7 @@ a:hover{
 }
 footer{
     background-color: #6d285f;
-    max-height: 50%;
-
-   
+    max-height: 50%;  
 }
 footer p{
     text-align: center;
@@ -152,10 +155,40 @@ footer p{
 .github{
     font-size: 50px;
     color: #000;
-
 }
 .linkdin{
-    margin-right: 10001px;
+    margin-right: 10000px;
     color: #000;
     font-size: 50px;
+}
+/* ////projects//// */
+.card{
+    display:flex;
+    flex-direction: column;
+    width: 30%;
+    transition: 1s;
+    background:linear-gradient(rgb(134, 88, 118),rgb(227, 78, 160));
+    cursor: pointer;  
+}
+.card:hover{
+    transform: scale(1.04,1.02);
+}
+
+.Projects{
+    display: flex;
+    flex-direction: row;
+    margin-left: 2px;
+    justify-content: center;
+    gap: 20px;
+}
+.image-PROJRCTS{
+    width: 100%;   
+}
+.Informations-PROJECTS{
+    padding-bottom: 20px;
+}
+.Informations-PROJECTS button{
+    font-size: 20px;
+    background-color: #e9a1da;
+    border: transparent;
 }

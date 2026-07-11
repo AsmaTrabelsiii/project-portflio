@@ -13,10 +13,10 @@
 <nav class="navbar"> 
   <ul>
     <h4>Asma Trabelsi</h4>
-    <li><a  href="">About</a></li>
-    <li><a href="">services</a></li>
-    <li><a href="">Projects</a></li>
-    <li><a href="">Contact</a></li>
+    <li><a  href="#About-mee">About</a></li>
+    <li><a href="#my-services">services</a></li>
+    <li><a href="#Project">Projects</a></li>
+    <li><a href="#contact-mee">Contact</a></li>
   </ul>
 </nav>
     </header>
@@ -33,7 +33,7 @@
                  </div>
 
             </div>
-              <div class="About-mee">
+              <div id="About-mee" class="About-mee">
                  <h1>About Mee</h1>
                   <h3>Hello! I'm Asma</h3>
                   <p >I am a Business Computing student and an aspiring  Web Developer, currently leveling up my skills in modern web technologies. I love bridging the gap between business logic and technical execution.
@@ -41,8 +41,7 @@
 Driven by a passion for continuous learning, my studies and training range from C programming to building web interfaces, backed by certifications in SEO and networking. I am focused on learning how to deliver clean, efficient, and professional digital solutions</p>
            </div> 
    <h1>my services</h1>         
-<div class="my-services">
-
+<div id="my-services" class="my-services">
 <span>
     <h2>HTML5</h2>
     <div class="logo"><i class="fa-brands fa-html5"></i>
@@ -62,38 +61,76 @@ Driven by a passion for continuous learning, my studies and training range from 
     </div>
 </span>
 </div>
+<!-- ///// Project //// -->
+ <h1>Projects</h1>
+<div id="Project" class="Projects">
+    <div class="card">
+          <section class="Informations-PROJECTS">
+          <h2>Project Name: BizAnalytics – Full-Stack BI Dashboard</h2>
+          <p>A minimalist, data-driven Business Intelligence dashboard designed for e-commerce store managers. It aggregates sales data, tracks inventory levels, and visualizes monthly revenue growth through interactive charts. Implemented dynamic filtering by date and product category to provide actionable insights.
+                 Tech Stack: React.js, Node.js, Express, MongoDB, Chart.js / Recharts, Tailwind CSS.
+                 Key Features:
+                 Real-time data visualization with clean, interactive charts.
+                 Advanced data filtering and sorting capabilities.
+                 Responsive, minimalist layout designed for optimal desktop and tablet view.</p>
+             <button>view my Project</button>
+          </section>
+             <img class="image-PROJRCTS" src="project-1.jpg" alt="">
+            </div> 
+   <div class="card">
+      <section class="Informations-PROJECTS" >
+           <h2>PrintFlow – Document Ordering & Management Platform</h2>
+           <p>A full-stack web application that simplifies document print-ordering and formatting workflows. Users can upload documents, customize print preferences (paper size, color options), and receive instant automated cost calculations. Features a comprehensive admin panel to track order lifecycles and manage customer queues.
+Tech Stack: React.js, Context API, Node.js, Express, MongoDB (GridFS for file storage), Tailwind CSS.
+Key Features:
+Secure file upload and metadata processing.
+Automated dynamic pricing engine based on document properties.
+Admin dashboard for real-time status updates and order tracking..</p>
+<button>view my Project</button>
+    </section>
+    <img class="image-PROJRCTS" src="project-2.jpg" alt="">
+   </div>
+    <div class="card">
+      <section  class="Informations-PROJECTS">
+        <h2>Taskify – Agile Project Management Tool</h2>
+        <p>A highly interactive project management application built to help teams organize tasks visually. It features dynamic kanban boards with seamless drag-and-drop functionality for updating task statuses instantly. Optimized for performance and smooth UI transitions.
+
+Tech Stack: React.js, React Beautiful DND, Node.js, Express, MongoDB.
+
+Key Features:
+
+Smooth drag-and-drop workflow for lists and individual task cards.
+
+User authentication and personalized dashboard management.
+
+Clean, distraction-free user interface focused on productivity.</p>
+<button>view my Project</button>
+        </section>
+        <img  class="image-PROJRCTS" src="project-3.jpg" alt="">
+    </div>
+</div>
+<!-- ///// contact-mee //// -->
  <h1>contact mee</h1>
-<div class="contact-mee">
-   
-  <span>
+<form  id="contact-mee"  class="contact-mee" > 
+    <span>
      <label for="name">your full name:</label>
-    <input  required type="text" id="name">
+    <input  required type="text" id="name" placeholder="put your name">
 </span>
     <span>
         <label for="email">your E-mail:</label>
-    <input  required type="" id="email">
+    <input  required type="email" id="email" placeholder="put your email">
 </span>
 <span>
      <label for="tel">your phone:</label>
-    <input  required type="tel" id="tel" >
-</span>    
-     
+    <input  required type="tel" id="tel" placeholder="put your phone" >
+</span>      
     <span>
     <label for="">your-message</label>
     <textarea ></textarea>
-    
-
     </span>
-    <button>sent your message</button>
-    
-    
-   
-
-
-</div>
+    <button>sent your message</button></form> 
     </main>
-    <footer>
-       
+    <footer>       
     <p>📍 Sfax, Tunisia</p>
 <p>✉️ asmatrabelsi1717@gmail.com</p>
         <nav>
@@ -105,10 +142,6 @@ Driven by a passion for continuous learning, my studies and training range from 
                     <a  class="linkdin" href="" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                 </li>
             </ul>
-    
-               
-          
-    
     </footer>
 </body>
 </html>
